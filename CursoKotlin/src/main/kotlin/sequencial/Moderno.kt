@@ -1,5 +1,27 @@
 package sequencial
 
+/*
+Desenvolva um programa em Kotlin com foco em estrutura sequencial moderna e interativa.
+O programa deve:
+
+    Exibir uma saudação inicial ao usuário;
+
+    Coletar o nome e a idade via entrada de dados (readLine);
+
+    Armazenar os dados em uma estrutura (mapOf);
+
+    Exibir os dados formatados;
+
+    Realizar um cálculo simples (idade em meses) e exibir o resultado;
+
+    Mostrar uma mensagem personalizada com base na idade;
+
+    Finalizar com uma mensagem de agradecimento.
+
+O foco é reforçar o entendimento de execução sequencial com lógica clara, amigável e sem estruturas de controle como if,
+for ou while dominando o fluxo.
+ */
+
 fun main() {
     println("Bem-vindo ao sistema de cadastro!")
 

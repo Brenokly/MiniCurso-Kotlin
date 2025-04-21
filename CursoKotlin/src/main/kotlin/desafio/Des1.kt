@@ -27,5 +27,5 @@ fun main() {
 
 fun prompt(texto: String): String {
     print("$texto: ")
-    return readlnOrNull() ?: ""
+    return readlnOrNull().orEmpty()
 }

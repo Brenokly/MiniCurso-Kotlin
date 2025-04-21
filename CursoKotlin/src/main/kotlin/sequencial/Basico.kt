@@ -1,5 +1,12 @@
 package sequencial
 
+/*
+Crie um programa simples que declare variáveis com informações básicas (nome e idade), e as exiba na tela usando comandos
+de saída. O programa deve seguir um fluxo sequencial, onde cada linha é executada diretamente, sem desvios ou repetições.
+
+Este exercício é ideal para apresentar o conceito de estrutura sequencial e a execução ordenada de instruções no Kotlin.
+ */
+
 fun main() {
     val nome = "Lucas"
     val idade = 20

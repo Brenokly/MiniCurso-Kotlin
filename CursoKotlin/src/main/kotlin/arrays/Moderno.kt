@@ -1,19 +1,33 @@
 package arrays
 
+/*
+Crie um programa em Kotlin que utilize um array de nomes. O programa deve capitalizar
+os nomes (primeira letra maiúscula), filtrar aqueles que começam com a letra "A", e ordenar a lista alfabeticamente.
+Use recursos modernos como map, filter, sorted e joinToString para praticar o uso funcional com arrays.
+*/
+
 fun main() {
-    val numeros = (1..10).toList()
-    val pares = numeros.filter { it % 2 == 0 }
+    val nomes = arrayOf("ana", "bruno", "Carlos", "aline", "Beatriz", "caio")
 
-    println("Números pares: $pares")
-    println("Soma dos pares: ${pares.sum()}")
+    println("Lista original:")
+    println(nomes.joinToString())
 
-    // Exemplo de uso de map
+    // Capitalizando todos os nomes
+    // O map aplica uma transformação a cada elemento do array
+    val capitalizados = nomes.map { it.replaceFirstChar { c -> c.uppercase() } }
 
-    val quadrados = numeros.map { it * it }
-    println("Quadrados: $quadrados")
+    // Filtrando nomes que começam com 'A' (ignorando maiúsculas/minúsculas)
+    val comA = capitalizados.filter { it.startsWith("A", ignoreCase = true) }
 
-    // Exemplo de uso de reduce
+    // Ordenando alfabeticamente
+    val ordenados = capitalizados.sorted()
 
-    val soma = numeros.reduce { acc, num -> acc + num }
-    println("Soma total: $soma")
+    println("\nNomes capitalizados:")
+    println(capitalizados.joinToString())
+
+    println("\nNomes que começam com 'A':")
+    println(comA.joinToString())
+
+    println("\nNomes ordenados:")
+    println(ordenados.joinToString())
 }
