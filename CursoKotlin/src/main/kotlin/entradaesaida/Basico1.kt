@@ -8,10 +8,10 @@ Esse exemplo demonstra o uso básico de entrada e saída de dados em Kotlin.
 
 fun main() {
     print("Digite seu nome: ")
-    val nome = readlnOrNull() ?: "Não informado"
+    val nome = readln()
 
     print("Digite sua idade: ")
-    val idade = readlnOrNull()?.toInt() ?: 0
+    val idade = readln().toInt()
 
     println("Olá, $nome! Você tem $idade anos.")
 }

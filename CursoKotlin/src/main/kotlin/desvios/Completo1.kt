@@ -1,15 +1,22 @@
 package desvios
 
 /*
-Implemente um programa que avalie o desempenho de um aluno com base em sua nota.
-Use a estrutura when para classificar a nota nos seguintes níveis:
-"Excelente" (≥ 9), "Bom" (≥ 7), "Regular" (≥ 5), e "Reprovado" (menor que 5).
-Ao final, o programa deve exibir a classificação correspondente.
-Esse exemplo demonstra o uso moderno e expressivo do when em Kotlin como alternativa ao if-else if.
+Crie um programa que leia a nota de um aluno (entre 0 e 10) e classifique seu desempenho com base nos seguintes critérios:
+
+    Excelente: nota ≥ 9
+
+    Bom: nota ≥ 7
+
+    Regular: nota ≥ 5
+
+    Reprovado: nota < 5
+
+Use a estrutura when para tornar o código mais claro e organizado.
 */
 
 fun main() {
-    val nota = 8.5
+    print("Digite a nota do aluno (0 a 10): ")
+    val nota = readln().toDouble()
 
     val resultado = when {
         nota >= 9 -> "Excelente"
